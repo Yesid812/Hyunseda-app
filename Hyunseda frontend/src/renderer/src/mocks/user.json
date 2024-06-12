@@ -1,0 +1,22 @@
+
+[
+    {
+      "id": 1,
+      "email": "yesid@gmail.com",
+      "password": "adminpassword",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "superadmin@example.com",
+      "password": "superadminpassword",
+      "role": "superadmin"
+    },
+    {
+      "id": 3,
+      "email": "user@example.com",
+      "password": "userpassword",
+      "role": "user"
+    }
+  ]
+  

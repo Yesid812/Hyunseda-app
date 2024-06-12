@@ -1,0 +1,215 @@
+.cart-section {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.products-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.cart {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cart-items {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    gap: 10px;
+}
+
+.cart-items img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+
+.cart-items ul {
+    padding: 0;
+    list-style: none;
+}
+
+.cart-items li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.cart-items li:last-child {
+    border-bottom: none;
+}
+
+.cart-items .item-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.cart-items .item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    gap: 10px;
+}
+
+.cart-items .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 16px;
+    justify-content: center;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    height: 33px;
+    width: 118px;
+}
+
+.cart-items .quantity-controls button {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.cart-items .quantity-controls button img {
+    width: 14px;
+    height: 14px;
+}
+
+.cart-items .item-quantity button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* Ajusta el ancho según sea necesario */
+    height: 24px; /* Ajusta la altura según sea necesario */
+}
+
+.cart-items .item-quantity button img {
+    width: 16px; 
+    height: 16px; 
+}
+
+
+.cart-items .quantity-controls button:hover {
+    background: #e0e0e0;
+}
+
+.cart-summary {
+    min-width: 250px;
+    margin: 40px 20px;
+    padding: 20px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-summary p {
+    color: rgb(128, 128, 128);
+    margin: 0;
+}
+
+.cart-summary span {
+    font-weight: 600;
+    color: #000;
+}
+
+.continue-button {
+    margin-top: 20px;
+    color: black;
+    width: 100%;
+    height: 37px;
+    background: rgb(255, 214, 0);
+    border-color: transparent;
+    outline: transparent;
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.continue-button:hover {
+    background-color: #e5c100;
+}
+
+.empty-cart {
+    text-align: center;
+    margin: 40px 20px;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 15px;
+}
+
+.empty-cart p {
+    font-size: 14px;
+    color: #666;
+}
+
+.empty-cart button {
+    background: rgb(255, 214, 0);
+    border-color: transparent;
+    outline: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.empty-cart button:hover {
+    background-color: #e5c100;
+}
+
+.empty-cart .empty-cart-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.empty-cart .empty-cart-image img {
+    padding-top: 10px;
+    width: 64px;
+    height: 64px;
+}

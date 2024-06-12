@@ -1,0 +1,149 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(235, 229, 229, 0.1);
+    position: relative;
+    z-index: 1002;
+    max-height: 312px;
+    max-width: 472px;
+    width: 100%;
+    font-family: "Poppins";
+    
+  }
+.modal-overlay .modal  .close-button {
+    position: absolute;
+    left: 450px; /* Ajuste el valor para mover el botoón */ 
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.title{
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.modal-overlay .modal  .close-button:hover {
+    background-color: #f1f1f1;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form label
+ {
+  margin-bottom: 5px;
+  color: #8D8D8D;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.input {
+  padding: 7px 14px;
+  border: 1px solid transparent;
+  outline-style: none;
+  color: rgb(53, 53, 53);
+  background: rgba(222, 222, 222, 0.4);
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Poppins';
+  margin-bottom: 20px;
+
+}
+
+.modal form button {
+  padding: 10px;
+  background-color: #FFD600 ;
+  color: black;
+  border: none;
+  width: 123px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.modal form button:hover {
+  background-color: #E5C100;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+.buttons{
+  margin-top: 25px;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Poppins';
+}
+#login-button{
+  color: black;
+  background: rgb(255, 214, 0);
+  border-color: transparent;
+  outline: transparent;
+  padding: 7px 14px;
+  border: 1px solid rgb(230, 230, 230);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins";
+  cursor: pointer;
+  display: flex;
+  white-space: nowrap;
+  gap: 10px;
+  position: relative;
+  width: fit-content;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#login-button:hover{
+  background-color: #E5C100;
+}
+
+#cancel-button{
+  background: rgb(255, 255, 255);
+  outline: transparent;
+  padding: 7px 14px;
+  border: 1px solid rgb(230, 230, 230);
+  color: rgb(53, 53, 53);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  white-space: nowrap;
+  gap: 10px;
+  position: relative;
+  width: fit-content;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Poppins";
+
+}
+#cancel-button:hover{
+  background-color: #e6e6e6;
+}

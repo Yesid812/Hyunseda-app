@@ -1,0 +1,112 @@
+.new-products-section{
+    margin: 30px;
+    padding: 0 40px 0 40px;
+    width: 100%;
+    background-color: white;
+    font-family: Poppins, sans-serif, Roboto, "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "sans-serif;
+}
+.new-products-section .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.new-products-section .title button{
+    background: rgb(255, 255, 255);
+    display: flex;
+    border: none;
+    padding: 7px 14px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    height: 30px;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.new-products-section .title button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 214, 0);
+    color: #000;
+}
+.new-products-section .title button img{
+    width: 12.25px;
+    height: 14px;
+    margin-right: 4px;
+    
+    fill: yellow !important;
+}
+.new-products-section .products{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 211;
+    height: 292;
+}
+.new-products-section .products ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacio entre los elementos */
+    list-style: none; /* Elimina los bullets */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margin por defecto */
+    
+}
+.new-products-section .products li{
+    position: relative; /* Añadido para posicionar el botón dentro del elemento */
+    flex: 1 0 calc(20% - 1rem);/* Asegura que el elemento no sea más pequeño que 150px */
+  border: 1px solid rgb(230, 230, 230);
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto del elemento */
+  background-color: #f0f0f0; /* Solo para visualización, puedes eliminarlo */
+  padding: 1rem; /* Solo para visualización, puedes ajustar o eliminar */
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+}
+.new-products-section img{
+    width: 100%;
+    height: 209px;
+    object-fit: contain;
+}
+
+.new-products-section .products ul li .add-to-cart {
+    display: flex;
+    position: absolute;
+    top : 10px;
+    left: 130px;
+    gap: 10px;
+    position: absolute;
+    width: 113px;
+    height: 37px;
+    bottom: 10px;
+    font-weight: 500;
+    font-family: "Poppins";
+    align-items: center;
+    font-size:14px;
+    transform: translateX(-50%);
+    background-color: yellow;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Transición suave */
+}
+
+
+/* Mostrar el botón al pasar el cursor sobre el producto */
+.new-products-section .products ul li:hover .add-to-cart {
+    opacity: 1;
+}
+.new-products-section .products ul li .add-to-cart img {
+    width: 16px;
+    height: 16px;
+}

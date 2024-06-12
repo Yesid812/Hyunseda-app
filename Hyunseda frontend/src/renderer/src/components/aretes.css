@@ -1,0 +1,130 @@
+.aretes-section {
+    padding: 0 20px 0 20px;
+    margin: 0px 60px 0px 60px;
+    border-radius: 10px;
+    background-color: #D8D4D3 ;
+    font-family: 'Poppins';
+}
+
+.aretes-section .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.aretes-section .title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.aretes-section .title button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 214, 0);
+    color: #000;
+}
+.aretes-section .title button img{
+    width: 12.25px;
+    height: 14px;
+    margin-right: 4px;
+    
+    fill: yellow !important;
+}
+.aretes-section .title button{
+    background: transparent;
+    display: flex;
+    border: none;
+    padding: 7px 14px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+    height: 30px;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.aretes-section .title button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 214, 0);
+    color: #000;
+}
+
+.aretes-section .products ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.aretes-section .products ul li {
+    position: relative; /* Añadido para posicionar el botón dentro del elemento */
+    flex: 1 0 calc(20% - 1rem); /* Ajusta el ancho a 20% menos el espacio del gap */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.aretes-section .products ul li img {
+    max-width: 100%;
+    height: 292px;
+    border-radius: 5px;
+    object-fit:contain;
+}
+
+.aretes-section .products ul li div {
+    margin-top: 10px;
+}
+
+.aretes-section .products ul li p {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: left;
+}
+.aretes-section .products ul li .add-to-cart {
+    display: flex;
+    position: absolute;
+    top : 20px;
+    left: 150px;
+    gap: 10px;
+    position: absolute;
+    align-items: center;
+    width: 113px;
+    height: 37px;
+    font-family: "Poppins";
+    bottom: 10px;
+    font-weight: 500;
+    font-size:14px;
+    transform: translateX(-50%);
+    background-color: yellow;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Transición suave */
+}
+
+
+/* Mostrar el botón al pasar el cursor sobre el producto */
+.aretes-section .products ul li:hover .add-to-cart {
+    opacity: 1;
+}
+.aretes-section .products ul li .add-to-cart img {
+    width: 16px;
+    height: 16px;
+}
