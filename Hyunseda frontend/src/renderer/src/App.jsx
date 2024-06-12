@@ -45,7 +45,6 @@ function App() {
     setFilteredProducts(filtered);
     // Cambiar la vista a 'search' para mostrar los resultados de la búsqueda
     setView('search');
-    setShowNewProducts(false);
   };
 
   // Restaurar la visibilidad de NewProductsSection al volver a la vista de productos

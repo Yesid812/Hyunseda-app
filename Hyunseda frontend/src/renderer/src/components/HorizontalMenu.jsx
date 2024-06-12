@@ -4,11 +4,13 @@ import icons from '../assets/Icons/icons';
 import LoginModal from './LoginModal';
 import RegisterModal from './RegisterModal';
 
-const HorizontalMenu = ({ onCartClick }) => {
+const HorizontalMenu = ({ onCartClick, onSearch }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
   const userMenuRef = useRef(null);
+  
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,7 +36,15 @@ const HorizontalMenu = ({ onCartClick }) => {
       setIsMenuOpen(false);
     }
   };
+   // Función para manejar cambios en el término de búsqueda
+   const handleChangeSearchTerm = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
+  // Función para realizar la búsqueda y pasar el término al componente App
+  const handleSearch = () => {
+    onSearch(searchTerm);
+  };
   useEffect(() => {
     if (isMenuOpen) {
       document.addEventListener('mousedown', handleClickOutside);
@@ -59,8 +69,8 @@ const HorizontalMenu = ({ onCartClick }) => {
           </div>
         </Link>
         <div className="input-menu">
-          <input id="search-input" type="text" placeholder="Buscar productos" />
-          <button id="search-button" type="button">
+          <input id="search-input" type="text" placeholder="Buscar productos"  value={searchTerm} onChange={handleChangeSearchTerm}/>
+          <button id="search-button" type="button" onClick={handleSearch}>
             <img src={icons.search} alt="buscar-productos" />
           </button>
         </div>
